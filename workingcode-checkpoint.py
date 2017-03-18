@@ -4,7 +4,7 @@
 # In[1]:
 
 import json
-with open('my_filename.json') as datafile:
+with open('indiaFootprint.json') as datafile:
     data =json.load(datafile)
 import numpy as np
 temp = []

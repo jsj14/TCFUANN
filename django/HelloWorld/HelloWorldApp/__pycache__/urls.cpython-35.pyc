@@ -1,0 +1,3 @@
+
+
+�p�V��@sFddlmZddlmZddlmZede�gZdS)�)�url�)�views)�fooz^/$N)�django.conf.urlsr�rZHelloWorldApp.viewsr�urlpatterns�r	r	�/C:\Users\jessy\HelloWorld\HelloWorldApp\urls.py�<module>s

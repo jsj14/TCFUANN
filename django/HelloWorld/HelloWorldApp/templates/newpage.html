@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TCFUANN page 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+<body>
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <script src="/static/js/jquery-2.2.0.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/glob.js"></script>
+<div class="container">
+  <h2>TCFUANN</h2>
+  <ul class="nav nav-pills">
+    <li class="active"><a href="withdata.html" target="below">Data</a></li>
+    <li><a href="graph1.html" target="below">Graph</a></li>
+    <li><a href="mapindex (1).html" target="below">Map</a></li>
+    <li><a data-toggle="pill" href="#menu3">Impact</a></li>
+  </ul>
+   
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Data</h3>
+	        <a href="withdata.html"></a>
+	
+          </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Graph</h3>
+      <a href="graph1.html"></a>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Map</h3>
+      <p><a href="mapindex(1).html"></a></p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Impact</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+<script>
+window.onload = alert(localStorage.getItem("fileName"));
+		var glob = require('glob');
+glob('**/fileName', function(err, files) {
+    console.log(files);
+});
+</script>
+</body>
+</html>

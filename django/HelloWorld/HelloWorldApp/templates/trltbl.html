@@ -1,0 +1,53 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script src="list.js"></script>
+<script src="fuzzysearch.js"></script>
+<style>
+.black option{
+        background-color:#0F0;
+    }
+{ margin: 0; padding: 0; }
+  html{
+   background: url('images.jpg') no-repeat center center fixed; 
+   -webkit-background-size: cover;
+       
+        -o-background-size: cover;
+        background-size: cover;
+}
+</style>
+<meta charset=utf-8 />
+<title>list</title>
+</head>
+
+
+  
+  <div id="test-list">
+ <font color= "blue" size= "6"> Search here for years:</font> 
+ <input type="text" class="fuzzy-search" />
+    <ul class="list">
+      <li><p class="name">1995</p>><a href="try.html">Graphical representation</a></li>
+      <li><p class="name">1996</p>><a href="try.html">Graphical representation</a></li>
+      <li><p class="name">1997</p>><a href="try.html">Graphical representation</a></li>
+      <li><p class="name">1998</p>><a href="try.html">Graphical representation</a></li>
+      <li><p class="name">1999</p>><a href="try.html">Graphical representation</a></li>
+      <li><p class="name">2000</p>><a href="try.html">Graphical representation</a></li>
+      <li><p class="name">2001</p>><a href="try.html">Graphical representation</a></li>
+      <li><p class="name">2003</p>><a href="try.html">Graphical representation</a></li>
+      <li><p class="name">2004</p></li>
+      <li><p class="name">2005</li>
+      <li><p class="name">2006</p></li>
+      <li><p class="name">2007</p></li>
+      <li><p class="name">2008</p></li>
+      <li><p class="name">2009</p></li>
+	  <li><p class="name">2010</p></li>
+    </ul>
+  </div>
+  <script>
+  var monkeyList = new List('test-list', { 
+  valueNames: ['name'], 
+  plugins: [ ListFuzzySearch() ] 
+});
+</script>
+</body>
+</html>

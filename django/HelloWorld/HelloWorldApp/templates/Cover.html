@@ -1,0 +1,96 @@
+
+<html>
+<body>
+<head>
+<script type="text/javascript">
+    function goToNewPage()
+    {
+
+        //var url1 = document.getElementById('list1').value;
+        var url2 = document.getElementById('list2').value;
+		localStorage.setItem("fileName", url2);
+                if(url1 != 'c'&& url2!= 'c') 
+                {
+            window.location = "newpage.html";
+                }
+        else
+        {
+          window.alert("please enter value");
+         }
+    }
+</script>
+</head>
+  <style>
+ .black option{
+        background-color:#0F0;
+    }
+
+html { 
+        background: url('/static/images/a.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+</style>
+<!-- Compiled and minified CSS -->
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">-->
+
+  <!-- Compiled and minified JavaScript -->
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
+
+      <!--Import Google Icon Font-->
+      <!--Import materialize.css-->
+
+      <!--Let browser know website is optimized for mobile-->
+    <!-- Compiled and minified CSS -->
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">  -->
+ <!--Import jQuery before materialize.js-->
+ <!--     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
+
+<div align="left">
+<p> <font color= "white" size="7" >TCFUANN</font> </p>
+  <p> <font color= "white" size="4" >Tracing Carbon Footprints Using Artificial Neural Network</font> <p>
+<center>
+ 
+ 
+ <p> <font color= "pink" size="4"></font> <p>
+ <form id="myform" method="GET" action="newpage.html">
+<input type=button value="Go" onclick="submit()" />
+  </form>
+<center>
+ <p><font color="pink" size="4"  ></font> <p>
+<div class="row">
+  <div class="input-field col s12 m6">
+ <select class="icons"  name="list2" id="list2" required form="myform">
+  <p class="black">
+  <option value="c" > Choose your location</option>
+  <option value="India"data-icon="/static/images/in.png" class="left circle" color="white">India</option>
+  <option value="USA"data-icon="/static/images/us.png" class="left circle">USA</option>
+  <option value="China"data-icon="/static/images/cn.png" class="left circle">China</option>
+  <option value= "UK"data-icon="/static/images/gb.png" class="left circle">UK</option>
+  <option value="Australia"data-icon="/static/images/au.png" class="left circle">Austrailia</option>
+  <option value="France"data-icon="/static/images/fr.png" class="left circle">France</option>
+  </p>
+  </select> 
+  </div>
+  </div>
+  
+
+ <script>
+ 
+ 
+  $(document).ready(function() {
+    $('select').material_select();
+});
+  
+</script>
+
+</center>
+ </div>
+</body>
+</html>
